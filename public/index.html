@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Cool Story Bro</title>
+    
+    <!-- include css -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="stylesheets/style.css" rel="stylesheet">
+    
+    <!-- include js scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script src="javascripts/app.js"></script>
+    <script src="javascripts/ctrl.js"></script>
+    <script src="javascripts/script.js"></script>
+  </head>
+  <body ng-app="csbApp" ng-controller="csbCtrl">
+    <ul id="stories">
+      <li ng-repeat="s in stories" class="w3-card w3-blue w3-padding w3-margin">
+        {{ s.content }}
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+var csbApp = angular.module("csbApp", []);
