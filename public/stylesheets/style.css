@@ -6,3 +6,46 @@
   justify-content: center;
   align-items: center;
 }
+
+#s-input {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  justify-content: center;
+  justify-items: center;
+}
+
+#s-input form {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 100%;
+  justify-content: center;
+  justify-items: right;
+  grid-row-gap: 10px;
+  width: 70%;
+  max-width: 600px;
+}
+
+#s-input form textarea {
+  justify-self: stretch;
+  height: 70px;
+  resize: none;
+}
+
+#s-input form textarea, #s-input form input, #s-input form button {
+  margin: 0px 5px;
+}
+
+#s-input form button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#s-input form input {
+  justify-self: stretch;
+}
+
+#s-input form header {
+  justify-self: stretch;
+}
+

@@ -2,9 +2,11 @@ csbApp.controller("csbCtrl", function($scope, $http){
   $scope.stories = [];
   
   $scope.addStory = function(c, a) {
+    var d = new Date();
     $scope.stories.push({
       content: c,
-      author: a
+      author: a,
+      date: d.toDateString()
     }); 
   }
   

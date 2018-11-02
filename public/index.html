@@ -13,9 +13,29 @@
     <script src="javascripts/script.js"></script>
   </head>
   <body ng-app="csbApp" ng-controller="csbCtrl">
+    <header class="w3-container w3-green">
+      <span class="w3-xlarge">COOL STORY BRO</span>
+    </header>
+    <div id="s-input" class="w3-margin">
+      <form class="w3-card"> 
+        <header class="w3-container w3-green">
+          <h4>Share Your Cool Story</h4>
+        </header>
+        <textarea class="w3-small" ng-bind="content" placeholder="Share your cool story here!" required></textarea>
+        <input class="w3-small"type="text" ng-bind="author" placeholder="Your name" required>
+        <button class="w3-button w3-green w3-medium">Share</button>
+      </form>
+    </div>
     <ul id="stories">
       <li ng-repeat="s in stories" class="w3-card w3-blue w3-padding w3-margin">
-        {{ s.content }}
+        <div class="s-content">{{s.content}}</div>
+        <div class="s-info">
+          <span class="s-author">{{s.author}}</span>
+          <span class="s-date">{{s.date}}</span>
+        </div>
+        <div class="s-reactions">
+          
+        </div>
       </li>
     </ul>
   </body>
